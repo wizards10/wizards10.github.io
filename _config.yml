@@ -6,9 +6,9 @@ reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://wizards10.github.io/Moon
+url:                https://taylantatli.github.io/Moon
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   true
+disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -40,7 +40,7 @@ disqus_shortname:   true
 #email:
 twitter:            username
 facebook:           username
-github-url:         wizards10
+github-url:         username
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
