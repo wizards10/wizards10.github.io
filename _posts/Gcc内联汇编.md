@@ -31,7 +31,7 @@
 - ### Example 2
 
      Inline assembly(*.c):
-  ​	uint32_t **cr0**;
+    ​	uint32_t **cr0**;
 
   ​	asm volatitle  ("movl %%cr0 , %0\n" :"=r"(**cr0**))   //将cr0寄存器的值读到%0 寄存器里 最终赋给cr0变量
 
