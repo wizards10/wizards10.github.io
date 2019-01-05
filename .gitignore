@@ -1,3 +1,4 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+_posts/2018-12-27-非连续内存分配.md
