@@ -25,9 +25,11 @@ comments: true
     ​		
 
 - 段描述符中的DPL
+
   - ![](../assets/img/DPL.png)
 
 - 中断门中的DPL
+
   - ![](../assets/img/中断门_DPL.png)
 
 - 特权转移
@@ -35,4 +37,35 @@ comments: true
   - 访问门时 CPL<=DPL[门] & CPL >= DPL[段]
 
   - 访问段时 MAX(CPL,RPL) <= DPL
+
+## 通过中断切换特权级
+
+- ![](../assets/img/中断切换特权级.png)
+  - SS ES 被打断程序的堆栈信息
+
+## 切换特权级(0 To 3)
+
+- 构造一个特殊的栈
+- 模仿ring3产生中断的地址
+- 设置SS、CS的特权级
+- IRET
+
+- ![](../assets/img/ring0Toring3.png)
+
+## 切换特权级(3 To 0)
+
+- 软中断(trap)
+- 中断服务例程
+- 如果想不返回ring3
+  - 删除SS、ESP
+  - 设置CS的CPL = 0
+
+- IRET
+
+## TSS格式(Task-State-Segment)
+
+- ring3跳到ring0 地址会发生变化，堆栈会发生变化。堆栈由TSS保存。
+- 软件会将TSS填充
+
+- ![](../assets/img/建立TSS.png)
 
