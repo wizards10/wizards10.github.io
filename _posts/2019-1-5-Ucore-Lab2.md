@@ -69,3 +69,8 @@ comments: true
 
 - ![](../assets/img/建立TSS.png)
 
+## x86内存管理单元 MMU
+
+- 段机制概述
+
+
