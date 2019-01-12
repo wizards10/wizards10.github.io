@@ -47,7 +47,7 @@ comments: true
 
 - 构造一个特殊的栈
 - 模仿ring3产生中断的地址
-- 设置SS、CS的特权级
+- 设置SS、CS的特权级 SS 中的RPL = 3 CS的特权级为3
 - IRET
 
 - ![](../assets/img/ring0Toring3.png)
@@ -66,11 +66,19 @@ comments: true
 
 - ring3跳到ring0 地址会发生变化，堆栈会发生变化。堆栈由TSS保存。
 - 软件会将TSS填充
-
+- TSS存放在全局描述符表
 - ![](../assets/img/建立TSS.png)
 
 ## x86内存管理单元 MMU
 
-- 段机制概述
+- GTD放在内存中
+- 每一次访问地址单元就要访问一次GTD？
+- 页机制举例
 
+![](../assets/img/页机制举例.png)
+
+- 操作系统建立页表、页目录
+- 在保护模式下使能页机制，OS需要置CR0寄存器中的bit 31
+
+- 
 
