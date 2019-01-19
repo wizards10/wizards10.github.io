@@ -81,4 +81,3 @@ comments: true
 - 在保护模式下使能页机制，OS需要置CR0寄存器中的bit 31
 
 - 
-
