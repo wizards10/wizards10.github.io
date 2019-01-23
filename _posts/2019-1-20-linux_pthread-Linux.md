@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Linux线程"
+date: 2019-1-20
+excerpt: "Linux线程控制原语"
+tags: [linux系统编程]
+comments: true
+---
 ## pthread_create()
 
 ```c
@@ -59,34 +67,4 @@ int pthread_cancel(pthread_t thread);
 ```
 
 - 杀死线程并不是实时的，需要等待线程到达某个取消点。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
