@@ -25,7 +25,7 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
- Comments
+#Comments
 disqus_shortname:   wizards10
 
 # Social
